@@ -1,5 +1,6 @@
 import 'package:carely_v2/auth/auth_page.dart';
 import 'package:carely_v2/components/getCaregivers.dart';
+import 'package:carely_v2/pages/care_giver_profile.dart';
 import 'package:carely_v2/pages/login_page.dart';
 import 'package:carely_v2/pages/profile_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -17,7 +18,8 @@ class MainPage extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return ProfilePage();
+            return const CareGiverProfile();
+            //return ProfilePage();
             //return HomePage();
           } else {
             return AuthPage();

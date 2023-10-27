@@ -19,6 +19,7 @@ dependencies:
   flash: ^3.0.5+1
   lottie: ^2.6.0
   quickalert: ^1.0.2
+  google_maps_flutter: ^2.5.0
   
 
 dev_dependencies:
